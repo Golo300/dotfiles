@@ -6,7 +6,8 @@
       ./hardware-configuration.nix
       ../common/core
 
-      ../common/optional/desktop/gnome.nix
+      # desktop config
+      ../common/optional/desktop/hyperland.nix
 
       # users
       ../user/timl
