@@ -30,6 +30,7 @@
     pkgs.fceux
     pkgs.jetbrains.clion
     pkgs.drawio
+    pkgs.font-awesome
     pkgs.gccgo
   ];
 
