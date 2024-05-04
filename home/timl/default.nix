@@ -8,7 +8,7 @@
       ./programs/sh.nix
       ./programs/git.nix
       ./programs/vscode.nix
-      ./programs/neovim.nix
+      ./programs/neovim/neovim.nix
     ];
 
   home.username = "timl";
