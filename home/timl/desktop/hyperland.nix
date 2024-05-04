@@ -21,7 +21,16 @@
   programs.swaylock = {
   enable = true;
   settings = {
-    extraOptions = "--effect-blur 7x5 --ring-color #FFFFFF"; 
+  color = "000000";
+  font-size = 24;
+  indicator-idle-visible = false;
+  indicator-radius = 60;
+  inside-color = "000000";
+  #line-color = "253243";
+  key-hl-color = "87c1cf";
+  ring-color = "6081ac";
+  show-failed-attempts = false;
+  image = "/home/timl/dotfiles/home/timl/wallpaper/nixos.jpg"; 
     };
   };
   home.packages = 
