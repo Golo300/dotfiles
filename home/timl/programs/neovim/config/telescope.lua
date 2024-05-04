@@ -8,7 +8,7 @@ vim.keymap.set("n", "<leader>fn", function()
 end, { desc = "[f]ind in [n]otes" })
 vim.keymap.set("n", "<leader>fd", function()
 	builtin.find_files({
-		search_dirs = { "/home/ruben/.config/nvim" },
+		search_dirs = { "/home/timl/.config/nvim" },
 	})
 end, { desc = "[f]ind in neovim [d]otfiles" })
 vim.keymap.set("n", "<leader>fg", builtin.git_files, { desc = "[f]ind [g]it files" })
