@@ -32,6 +32,7 @@
     pkgs.drawio
     pkgs.font-awesome
     pkgs.gccgo
+    pkgs.libsForQt5.kalgebra
   ];
 
   nixpkgs.config.permittedInsecurePackages = [

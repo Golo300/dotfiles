@@ -2,9 +2,9 @@
 let
   myAliases =
     {
-      ll = "ll -l";
+      "ll" = "ls -la";
       ".." = "cd ..";
-      "conf" = "cd /etc/nixos";
+      "conf" = "cd ~/dotfiles";
     };
 in
 {
@@ -18,5 +18,4 @@ in
     enable = true;
     shellAliases = myAliases;
   };
-
 }
