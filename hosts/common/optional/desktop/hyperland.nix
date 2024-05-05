@@ -1,8 +1,8 @@
 { config, pkgs, inputs, ... }:
 {
-    #services.xserver.enable = true;
-    #services.xserver.displayManager.sddm.enable = true;
-    #services.xserver.displayManager.sddm.hyprland.enable = true;
+  #services.xserver.enable = true;
+  #services.xserver.displayManager.sddm.enable = true;
+  #services.xserver.displayManager.sddm.hyprland.enable = true;
   services = {
     xserver = {
       enable = true;
@@ -25,15 +25,15 @@
   };
 
   programs.hyprland = {
-          enable = true;
-          nvidiaPatches = true;
-          #xwayland.enable = true;
-          };
+    enable = true;
+    nvidiaPatches = true;
+    #xwayland.enable = true;
+  };
 
 
-    environment.systemPackages = with pkgs; [
- ];
+  environment.systemPackages = with pkgs; [
+  ];
 
-xdg.portal.enable = true;
+  xdg.portal.enable = true;
   xdg.portal.extraPortals = [ pkgs.xdg-desktop-portal-gtk ];
 }

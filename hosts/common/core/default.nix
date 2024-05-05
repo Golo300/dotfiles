@@ -23,7 +23,7 @@
     rclone
     restic
   ];
-security.pam.services.swaylock = {
+  security.pam.services.swaylock = {
     text = ''
       auth include login
     '';
