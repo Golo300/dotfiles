@@ -9,10 +9,10 @@
     systemd.enable = true;
     settings = [{
       height = 30;
-      layer = "top";
-      position = "top";
-      modules-center = [ "sway/window" ];
-      modules-left = [ "sway/workspaces" "sway/mode" ];
+      layer = "bottom";
+      position = "bottom";
+      modules-center = [ "hyprland/window" ];
+      modules-left = [ "hyprland/workspaces" "hyprland/mode" ];
       modules-right = [
         "pulseaudio"
         "network"

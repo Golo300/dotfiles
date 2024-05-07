@@ -46,6 +46,7 @@
       pkgs.dunst
       pkgs.eww
       pkgs.wofi
+      pkgs.xclip
     ];
 
 

@@ -7,15 +7,14 @@ let
     color = "#000";
     background-color.warning = "#777";
     background-color.critical = "#FF0000";
+    green-color = "#60e48d";
   };
 in
 {
   programs.waybar.style = ''
 
 window#waybar {
-	/*background: #000000;*/
-	background: rgba(0, 0, 0, 0.7);
-	color: gray;
+	background: #191c2f;
 	color: #ffffff;
 }
 
@@ -31,26 +30,20 @@ window#waybar {
 
 #workspaces button {
 	padding: 0 2px;
-	margin: 0px;
+	margin: 3px;
 	background: transparent;
-	color: #ff8700;
-	/*
-	color: #00afd7;
-	color: #ffffff;
-	border: 1px solid #00afd7;
-	*/
-	border: 1px solid #1b1d1e;
+	color: #23defd;
+	border: 1px solid #23defd;
 	font-weight: bold;
+    border-radius: 0%;
 }
 #workspaces button:hover {
 	box-shadow: inherit;
 	text-shadow: inherit;
 }
 
-#workspaces button.focused {
-	background: #e88939;
-	background: #00afd7;
-	color: #1b1d1e;
+#workspaces button.active {
+	border: 2px solid #23defd;
 }
 
 #workspaces button.urgent {

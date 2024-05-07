@@ -13,6 +13,9 @@
     vim-sleuth
     nerdtree
     dashboard-nvim
+    telescope-nvim
+    telescope-fzf-native-nvim
+    onedark-nvim
   ];
 
   home.file.".config/nvim/init.vim".text = ''
