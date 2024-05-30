@@ -18,17 +18,15 @@
   home.stateVersion = "23.11";
 
   home.packages = [
+    pkgs.gnome.nautilus
     pkgs.kitty
     pkgs.discord
     pkgs.firefox
     pkgs.spotify
     pkgs.keepassxc
-    pkgs.p3x-onenote
     pkgs.legendary-gl
     pkgs.prismlauncher
-    pkgs.obsidian
     pkgs.fceux
-    pkgs.jetbrains.clion
     pkgs.drawio
     pkgs.font-awesome
     pkgs.gccgo

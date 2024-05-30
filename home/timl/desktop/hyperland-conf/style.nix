@@ -108,6 +108,9 @@ window#waybar {
 #pulseaudio {
 }
 
+#custom-nixstore {
+}
+
 #pulseaudio.muted {
 }
 

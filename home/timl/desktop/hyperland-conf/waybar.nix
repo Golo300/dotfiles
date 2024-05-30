@@ -12,7 +12,7 @@
       layer = "bottom";
       position = "bottom";
       modules-center = [ "hyprland/window" ];
-      modules-left = [ "hyprland/workspaces" "hyprland/mode" ];
+      modules-left = [ "hyprland/workspaces" "hyprland/mode" "custom/nixstore"];
       modules-right = [
         "pulseaudio"
         "network"
@@ -38,6 +38,12 @@
         format-alt = "{:%Y-%m-%d}";
         tooltip-format = "{:%Y-%m-%d | %H:%M}";
       };
+      "custom/nixstore" = {
+          exec = "${pkgs.coreutils}/bin/du -sh /nix/store | ${pkgs.gnused}/bin/sed 's/\\([0-9]\\+[A-Z]\\+\\).*/\\1/'";
+          interval = 300;
+          format = "{}";
+          tooltip = false;
+        };
       cpu = {
         format = "{usage}% ";
         tooltip = false;
