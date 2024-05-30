@@ -11,8 +11,12 @@
 
       # users
       ../user/timl
+
+      # module
+      ../../modules
     ];
 
+  timl.backup.enable = true;
   # virtualisation
   virtualisation.docker.enable = true;
   virtualisation.virtualbox.host.enable = true;

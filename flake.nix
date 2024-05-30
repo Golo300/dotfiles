@@ -12,6 +12,12 @@
       inputs.nixpkgs.follows = "nixpkgs";
     };
 
+    # agenix for encrypting secrets
+    agenix = {
+      url = "github:ryantm/agenix";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
+
     # formatter for *.nix files
     treefmt-nix = {
       url = "github:numtide/treefmt-nix";
@@ -20,7 +26,7 @@
 
   };
 
-  outputs = { self, nixpkgs, treefmt-nix, home-manager, ... }@inputs:
+  outputs = { self, nixpkgs, treefmt-nix, agenix, home-manager, ... }@inputs:
     let
       lib = nixpkgs.lib // home-manager.lib;
       system = "x86_64-linux";
@@ -39,6 +45,10 @@
             specialArgs = { inherit inputs; };
             modules = [
               ./hosts/amboss-oktagon
+              agenix.nixosModules.default
+              {
+                _module.args.agenix = agenix.packages.${system}.default;
+              }
               inputs.home-manager.nixosModules.default
             ];
 

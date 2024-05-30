@@ -1,4 +1,4 @@
-{ config, inputs, pkgs, ... }:
+{ config, inputs, pkgs, agenix, ... }:
 {
 
   imports =
@@ -19,7 +19,7 @@
         id = "GPN";
         type = "wifi";
         autoconnect = true;
-        interface-name = "wlp3s0";
+        interface-name = "wlp1s0";
       };
       wifi = {
         mode = "infrastructure";
@@ -58,6 +58,7 @@
     docker-compose
     rclone
     restic
+    agenix
   ];
   security.pam.services.swaylock = {
     text = ''
