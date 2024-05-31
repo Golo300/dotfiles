@@ -3,6 +3,7 @@
 {
   programs.kitty = {
     enable = true;
+    theme = "Galaxy";
     settings = {
       background_opacity = "0.8";
       enabled_layouts = "Splits";

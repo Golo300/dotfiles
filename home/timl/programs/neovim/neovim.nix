@@ -10,6 +10,7 @@
       clang-tools
       gopls
       clang
+      python3
     ] ++ (with pkgs.nodePackages; [
       bash-language-server
       vscode-langservers-extracted
@@ -30,6 +31,7 @@
       in
       [
         nvim-treesitter
+        nvim-treesitter.withAllGrammars
         nvim-lspconfig
 
         onedark-nvim
