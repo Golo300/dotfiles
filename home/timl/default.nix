@@ -8,6 +8,7 @@
       ./programs/sh.nix
       ./programs/git.nix
       ./programs/vscode.nix
+      ./programs/lf.nix
       ./programs/neovim/neovim.nix
     ];
 
@@ -31,7 +32,33 @@
     pkgs.font-awesome
     pkgs.gccgo
     pkgs.libsForQt5.kalgebra
+  
+    pkgs.evince # gnome pdf reader
+    pkgs.gnome.eog # gnome image viewer
+    pkgs.pistol
+    pkgs.file
   ];
+
+  xdg.mimeApps = {
+    enable = true;
+
+    defaultApplications = {
+      # set firefox as default browser
+      "text/html" = "firefox.desktop";
+      "x-scheme-handler/http" = "firefox.desktop";
+      "x-scheme-handler/https" = "firefox.desktop";
+      "x-scheme-handler/about" = "firefox.desktop";
+      "x-scheme-handler/unknown" = "firefox.desktop";
+
+      # pdf
+      "application/pdf" = "org.gnome.Evince.desktop";
+
+      # images
+      "image/png" = "org.gnome.eog.desktop";
+      "image/jpeg" = "org.gnome.eog.desktop";
+    };
+  };
+
 
   nixpkgs.config.permittedInsecurePackages = [
     "electron-25.9.0"
