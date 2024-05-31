@@ -9,6 +9,8 @@
       ./programs/git.nix
       ./programs/vscode.nix
       ./programs/lf.nix
+      ./programs/kitty.nix
+      ./programs/zsh.nix
       ./programs/neovim/neovim.nix
     ];
 
@@ -32,7 +34,8 @@
     pkgs.font-awesome
     pkgs.gccgo
     pkgs.libsForQt5.kalgebra
-  
+    pkgs.ripgrep
+
     pkgs.evince # gnome pdf reader
     pkgs.gnome.eog # gnome image viewer
     pkgs.pistol

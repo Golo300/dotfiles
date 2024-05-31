@@ -5,5 +5,6 @@
     description = "Tim Lanzinger";
     extraGroups = [ "networkmanager" "wheel" "docker" "dialout" ];
     packages = with pkgs; [ hello ];
+    shell = pkgs.zsh;
   };
 }

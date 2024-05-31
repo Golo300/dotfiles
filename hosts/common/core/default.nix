@@ -13,6 +13,8 @@
 
   networking.networkmanager.enable = true;
 
+  programs.zsh.enable = true;
+
   networking.networkmanager.ensureProfiles.profiles = {
     "GPN" = {
       connection = {
