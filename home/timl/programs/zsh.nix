@@ -13,12 +13,19 @@
     };
     enableCompletion = true;
 
+    zplug = {
+        enable = true;
+        plugins = [
+            { name = "zsh-users/zsh-autosuggestions"; } # Simple plugin installation
+        ];
+    };
+
     oh-my-zsh = {
       enable = true;
       plugins = [
         "battery"
       ];
-      theme = "agnoster";
+      theme = "bira";
     };
   };
 }
