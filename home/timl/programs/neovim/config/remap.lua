@@ -16,4 +16,4 @@ vim.keymap.set(
 -- exit terminal mode with escape
 vim.keymap.set("t", "<Esc>", "<C-\\><C-n>", { desc = "exit terminal mode with escape" })
 -- open new terminal on the bottom
-vim.keymap.set("", "<leader>t", ":split term://zsh<cr>:resize -20<cr> :startinsert<cr>", { desc = "open terminal" })
+vim.keymap.set("", "<leader>t", ":split term://zsh<cr>:resize -16<cr> :startinsert<cr>", { desc = "open terminal" })
