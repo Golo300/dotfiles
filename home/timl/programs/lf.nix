@@ -28,7 +28,7 @@ in
     settings = {
       cleaner = "${clean_script}";
     };
-  keybindings = {
+    keybindings = {
       a = ":push %mkdir<space>";
       r = "push :rename<space>";
       t = "trash";
@@ -46,7 +46,7 @@ in
         [ "$ans" = "y" ] && rm -rf $fx
         }}
       '';
-   };
+    };
     extraConfig = ''
       %mkdir -p ~/.trash
     '';
