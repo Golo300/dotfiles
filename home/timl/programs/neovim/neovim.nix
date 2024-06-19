@@ -58,6 +58,7 @@
         undotree
         vim-fugitive
         gitsigns-nvim
+        git-blame-nvim
       ];
     extraLuaConfig = lib.strings.concatStringsSep "\n"
       (lib.attrsets.mapAttrsToList
