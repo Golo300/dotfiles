@@ -1,4 +1,4 @@
-{ config, inputs, pkgs, agenix, ... }:
+{ config, inputs, pkgs, agenix, lib, ... }:
 {
 
   imports =
@@ -52,7 +52,6 @@
   };
 
   hardware.pulseaudio.enable = true;
-
   # basic packages for all systems
   environment.systemPackages = with pkgs; [
     vim
@@ -61,7 +60,14 @@
     rclone
     restic
     agenix
+    android-studio
   ];
+    nixpkgs.config.allowUnfreePredicate = pkg: builtins.elem (lib.getName pkg) [
+             "android-studio-stable"
+           ];
+        
+
+
   security.pam.services.swaylock = {
     text = ''
       auth include login
