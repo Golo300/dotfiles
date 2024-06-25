@@ -7,7 +7,7 @@ local on_attach = function(client, bufnr)
 	end
 
 	if client.server_capabilities.documentFormattingProvider then
-		nmap("<leader>lf", vim.lsp.buf.format, "[l]sp do [f]ormatting")
+		nmap("<leader>df", vim.lsp.buf.format, "[l]sp [d]o [f]ormatting")
 	end
 
 	nmap("gd", vim.lsp.buf.definition, "[g]o to [d]efinition")
