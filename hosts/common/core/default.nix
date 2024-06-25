@@ -62,10 +62,10 @@
     agenix
     android-studio
   ];
-    nixpkgs.config.allowUnfreePredicate = pkg: builtins.elem (lib.getName pkg) [
-             "android-studio-stable"
-           ];
-        
+  nixpkgs.config.allowUnfreePredicate = pkg: builtins.elem (lib.getName pkg) [
+    "android-studio-stable"
+  ];
+
 
 
   security.pam.services.swaylock = {
