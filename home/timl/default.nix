@@ -36,6 +36,7 @@
     pkgs.libsForQt5.kalgebra
     pkgs.ripgrep
     pkgs.fastfetch
+    pkgs.moodle-dl
 
     pkgs.evince # gnome pdf reader
     pkgs.gnome.eog # gnome image viewer

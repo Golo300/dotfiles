@@ -1,6 +1,6 @@
 # Dotfiles
 
-My dotfiles repo for my Nixos machine. Currently on stable 23.11.
+My dotfiles repo for my Nixos machine. Currently on stable 24.05.
 
 ## Usage
 
