@@ -18,6 +18,9 @@
       inputs.nixpkgs.follows = "nixpkgs";
     };
 
+
+    git-cloner.url = "github:Golo300/git-cloner";
+
     # formatter for *.nix files
     treefmt-nix = {
       url = "github:numtide/treefmt-nix";
@@ -26,7 +29,7 @@
 
   };
 
-  outputs = { self, nixpkgs, treefmt-nix, agenix, home-manager, ... }@inputs:
+  outputs = { self, nixpkgs, treefmt-nix, agenix, home-manager, git-cloner, ... }@inputs:
     let
       lib = nixpkgs.lib // home-manager.lib;
       system = "x86_64-linux";
@@ -51,7 +54,6 @@
               }
               inputs.home-manager.nixosModules.default
             ];
-
           };
 
         };

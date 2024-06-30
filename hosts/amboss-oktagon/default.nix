@@ -5,6 +5,7 @@
     [
       ./hardware-configuration.nix
       ../common/core
+      ../common/custom
 
       # desktop config
       ../common/optional/desktop/hyperland.nix

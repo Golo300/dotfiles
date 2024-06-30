@@ -10,7 +10,7 @@
       clang-tools
       gopls
       clang
-      python3
+      pyright
     ] ++ (with pkgs.nodePackages; [
       bash-language-server
       vscode-langservers-extracted

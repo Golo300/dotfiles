@@ -15,6 +15,9 @@
 
   programs.zsh.enable = true;
 
+  boot.binfmt.emulatedSystems = [ "aarch64-linux" ];
+  nix.settings.extra-platforms = config.boot.binfmt.emulatedSystems;
+
   networking.networkmanager.ensureProfiles.profiles = {
     "GPN" = {
       connection = {
@@ -60,6 +63,7 @@
     rclone
     restic
     agenix
+    inputs.git-cloner.packages.${system}.default
     android-studio
   ];
   nixpkgs.config.allowUnfreePredicate = pkg: builtins.elem (lib.getName pkg) [
