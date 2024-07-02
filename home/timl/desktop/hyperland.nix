@@ -18,6 +18,17 @@
   gtk.iconTheme.package = pkgs.papirus-icon-theme;
   gtk.iconTheme.name = "Papirus-Dark";
 
+  dconf.settings = {
+    "org/gnome/desktop/interface" = {
+      color-scheme = "prefer-dark";
+    };
+
+    "org/gnome/desktop/wm/preferences" =
+      {
+        button-layout = "appmenu:";
+      };
+  };
+
   programs.swaylock = {
     enable = true;
     settings = {
