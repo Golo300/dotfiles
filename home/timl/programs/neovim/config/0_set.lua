@@ -13,6 +13,10 @@ vim.o.shiftwidth = 4
 vim.o.expandtab = true
 vim.o.smartindent = true
 vim.o.wrap = false
+
+vim.cmd [[
+  syntax enable
+]]
 -- automatic line wrap and vertical line after X characters
 --vim.o.colorcolumn = "120"
 --vim.o.textwidth = 120 -- this enables re-arranging lines with gq
