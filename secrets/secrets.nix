@@ -4,5 +4,8 @@ in
 {
   "restic/env.age".publicKeys = [ timl ];
   "restic/password.age".publicKeys = [ timl ];
+
+  "wireguard/wireguardPrivateKey.age".publicKeys = [ timl ];
+  "wireguard/wireguardPreshardKey.age".publicKeys = [ timl ];
 }
 

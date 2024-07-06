@@ -10,4 +10,14 @@
     owner = "timl";
     group = "users";
   };
+  age.secrets.wireguardPrivateKey = {
+    file = ../secrets/wireguard/wireguardPrivateKey.age;
+    owner = "timl";
+    group = "users";
+  };
+  age.secrets.wireguardPresharedKey = {
+    file = ../secrets/wireguard/wireguardPreshardKey.age;
+    owner = "timl";
+    group = "users";
+  };
 }

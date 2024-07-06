@@ -14,6 +14,7 @@
       modules-center = [ "hyprland/window" ];
       modules-left = [ "hyprland/workspaces" "hyprland/mode" "custom/nixstore" ];
       modules-right = [
+        "custom/vpn"
         "pulseaudio"
         "network"
         "cpu"
@@ -48,6 +49,23 @@
         format = "{usage}% ";
         tooltip = false;
       };
+     
+      "custom/vpn" = {
+          interval = 1;
+          tooltip = false;
+          format = "{}";
+          exec = pkgs.writeShellScript "vpn-waybar" ''
+            is_con_active() {
+                return `${pkgs.networkmanager}/bin/nmcli connection show --active | ${pkgs.gnugrep}/bin/grep $1 > /dev/null`
+            }
+
+            if `is_con_active wg0`; then
+                echo '🔵  '
+            else
+                echo ' '
+            fi
+          '';
+        };
       memory = { format = "{}% "; };
       network = {
         interval = 1;
@@ -60,7 +78,7 @@
       pulseaudio = {
         format = "{volume}% {icon} {format_source}";
         format-bluetooth = "{volume}% {icon} {format_source}";
-        format-bluetooth-muted = " {icon} {format_source}";
+        format-bluetooth-muted = "{icon} {format_source}";
         format-icons = {
           car = "";
           default = [ "" "" "" ];
@@ -70,7 +88,7 @@
           phone = "";
           portable = "";
         };
-        format-muted = " {format_source}";
+        format-muted = "{format_source}";
         format-source = "{volume}% ";
         format-source-muted = "";
         on-click = "pavucontrol";

@@ -111,6 +111,9 @@ window#waybar {
 #custom-nixstore {
 }
 
+#custom-vpn {
+}
+
 #pulseaudio.muted {
 }
 

@@ -18,6 +18,7 @@
     ];
 
   timl.backup.enable = true;
+  services.blueman.enable = true;
   # virtualisation
   virtualisation.docker.enable = true;
   virtualisation.virtualbox.host.enable = true;
