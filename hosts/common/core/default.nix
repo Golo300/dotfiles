@@ -64,13 +64,7 @@
     restic
     agenix
     inputs.git-cloner.packages.${system}.default
-    android-studio
   ];
-  nixpkgs.config.allowUnfreePredicate = pkg: builtins.elem (lib.getName pkg) [
-    "android-studio-stable"
-  ];
-
-
 
   security.pam.services.swaylock = {
     text = ''
