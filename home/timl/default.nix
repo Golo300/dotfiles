@@ -26,6 +26,7 @@
     pkgs.discord
     pkgs.firefox
     pkgs.spotify
+    pkgs.usql 
     pkgs.keepassxc
     pkgs.legendary-gl
     pkgs.prismlauncher
