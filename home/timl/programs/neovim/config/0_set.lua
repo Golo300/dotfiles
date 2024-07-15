@@ -39,5 +39,3 @@ vim.o.smartcase = true
 -- splits: by default split to right and below
 vim.o.splitright = true
 vim.o.splitbelow = true
-
-vim.o.runtimepath = vim.o.runtimepath .. ",home/timl/nvim/parser"
