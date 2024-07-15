@@ -9,7 +9,7 @@ vim.keymap.set("", "<leader>c", ":split <cr>", { desc = "split horizontal" })
 vim.keymap.set("", "<leader>q", ":quit <cr>", { desc = "close tab" })
 
 vim.keymap.set("", "<leader>h", "<C-w>h", { desc = "switch to left" })
-vim.keymap.set("", "<leader>j", "<C-w>j", { desc = "switch down" })
+vim.keymap.set("", "<leader>j", "<C-w>j i", { desc = "switch down" })
 vim.keymap.set("", "<leader>k", "<C-w>k", { desc = "switch up" })
 vim.keymap.set("", "<leader>l", "<C-w>l", { desc = "switch to right" })
 vim.keymap.set(

@@ -14,9 +14,9 @@ vim.o.expandtab = true
 vim.o.smartindent = true
 vim.o.wrap = false
 
-vim.cmd [[
+vim.cmd([[
   syntax enable
-]]
+]])
 -- automatic line wrap and vertical line after X characters
 --vim.o.colorcolumn = "120"
 --vim.o.textwidth = 120 -- this enables re-arranging lines with gq
@@ -39,3 +39,5 @@ vim.o.smartcase = true
 -- splits: by default split to right and below
 vim.o.splitright = true
 vim.o.splitbelow = true
+
+vim.o.runtimepath = vim.o.runtimepath .. ",home/timl/nvim/parser"

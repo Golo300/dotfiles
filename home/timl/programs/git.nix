@@ -1,7 +1,7 @@
 { config, lib, pkgs, ... }:
 
-let 
-   brancherer = pkgs.writeShellApplication {
+let
+  brancherer = pkgs.writeShellApplication {
     name = "branch";
     runtimeInputs = [ pkgs.openssh ];
     text = ''
@@ -27,5 +27,5 @@ in
     };
 
   };
-  home.packages =  [ brancherer ];
+  home.packages = [ brancherer ];
 }

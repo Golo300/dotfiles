@@ -26,15 +26,10 @@
     pkgs.discord
     pkgs.firefox
     pkgs.spotify
-    pkgs.usql 
+    pkgs.usql
     pkgs.keepassxc
-    pkgs.legendary-gl
-    pkgs.prismlauncher
-    pkgs.fceux
     pkgs.drawio
     pkgs.font-awesome
-    pkgs.gccgo
-    pkgs.libsForQt5.kalgebra
     pkgs.ripgrep
     pkgs.fastfetch
     pkgs.moodle-dl

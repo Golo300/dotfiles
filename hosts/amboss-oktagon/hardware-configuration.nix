@@ -14,7 +14,7 @@
   boot.kernelModules = [ "kvm-amd" ];
   boot.extraModulePackages = [ ];
   hardware.bluetooth.enable = true; # enables support for Bluetooth
-  hardware.bluetooth.powerOnBoot = true; 
+  hardware.bluetooth.powerOnBoot = true;
 
   fileSystems."/" =
     {

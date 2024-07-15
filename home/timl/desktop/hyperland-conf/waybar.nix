@@ -49,23 +49,23 @@
         format = "{usage}% ";
         tooltip = false;
       };
-     
-      "custom/vpn" = {
-          interval = 1;
-          tooltip = false;
-          format = "{}";
-          exec = pkgs.writeShellScript "vpn-waybar" ''
-            is_con_active() {
-                return `${pkgs.networkmanager}/bin/nmcli connection show --active | ${pkgs.gnugrep}/bin/grep $1 > /dev/null`
-            }
 
-            if `is_con_active wg0`; then
-                echo '🔵  '
-            else
-                echo ' '
-            fi
-          '';
-        };
+      "custom/vpn" = {
+        interval = 1;
+        tooltip = false;
+        format = "{}";
+        exec = pkgs.writeShellScript "vpn-waybar" ''
+          is_con_active() {
+              return `${pkgs.networkmanager}/bin/nmcli connection show --active | ${pkgs.gnugrep}/bin/grep $1 > /dev/null`
+          }
+
+          if `is_con_active wg0`; then
+              echo '🔵  '
+          else
+              echo ' '
+          fi
+        '';
+      };
       memory = { format = "{}% "; };
       network = {
         interval = 1;
