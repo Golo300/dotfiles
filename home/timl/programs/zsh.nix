@@ -10,6 +10,7 @@
       "conf" = "cd ~/dotfiles\n nvim";
       # other stuff
       hibernate = "systemctl hibernate";
+      repo = "cd $(reporer)";
 
       wgu = "systemctl start wg-quick-wg0";
       wgd = "systemctl stop wg-quick-wg0";

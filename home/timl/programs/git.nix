@@ -8,6 +8,15 @@ let
       ${pkgs.git}/bin/git branch | grep -v "^\*" | ${pkgs.fzf}/bin/fzf --height=20% --reverse --info=inline | xargs ${pkgs.git}/bin/git checkout
     '';
   };
+  repoer = pkgs.writeShellApplication {
+    name = "reporer";
+    text = ''
+      SEARCH_DIR=/home/timl/SC
+
+      REPO=$(find "$SEARCH_DIR" -type d -name ".git" | sed 's/\/.git$//' | ${pkgs.fzf}/bin/fzf --height=20% --reverse --info=inline --prompt="Select a repository: ")
+      echo "$REPO"
+    '';
+  };
 in
 {
   programs.git = {
@@ -27,5 +36,5 @@ in
     };
 
   };
-  home.packages = [ brancherer ];
+  home.packages = [ brancherer repoer ];
 }
