@@ -42,7 +42,7 @@
       "custom/nixstore" = {
         exec = "${pkgs.coreutils}/bin/du -sh /nix/store | ${pkgs.gnused}/bin/sed 's/\\([0-9]\\+[A-Z]\\+\\).*/\\1/'";
         interval = 300;
-        format = "{}";
+        format = "  {}";
         tooltip = false;
       };
       cpu = {

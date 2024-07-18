@@ -4,7 +4,7 @@
     (nerdfonts.override { fonts = [ "JetBrainsMono" ]; })
     #google-fonts
     corefonts
-    nerdfonts
+    #nerdfonts
   ];
   nixpkgs.config.allowUnfreePredicate = pkg: builtins.elem (lib.getName pkg) [
     "corefonts"
