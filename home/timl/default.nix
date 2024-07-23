@@ -33,6 +33,8 @@
     pkgs.ripgrep
     pkgs.fastfetch
     pkgs.moodle-dl
+    pkgs.godot_4
+    pkgs.zapzap
 
     pkgs.evince # gnome pdf reader
     pkgs.gnome.eog # gnome image viewer
@@ -59,7 +61,6 @@
       "image/jpeg" = "org.gnome.eog.desktop";
     };
   };
-
 
   nixpkgs.config.permittedInsecurePackages = [
     "electron-25.9.0"
