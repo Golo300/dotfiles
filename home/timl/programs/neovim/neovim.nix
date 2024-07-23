@@ -28,15 +28,6 @@
             sha256 = "sha256-Z4Icv7c/fK55plk0y/lEsoWDhLc8VixjQyyO6WdTOVw=";
           };
         };
-        nvim-dev-webicons = pkgs.vimUtils.buildVimPlugin {
-          name = "nvim-dev-webicons";
-          src = pkgs.fetchFromGitHub {
-            owner = "nvim-tree";
-            repo = "nvim-dev-webicons";
-            rev = "925e2aa30dc9fe9332060199c19f132ec0f3d493";
-            sha256 = "+T88roJ4pa7/2p2Bdevn+wTNAXgGmB+QkaLRq2rtUUQ=";
-          };
-        };
       in
       [
         nvim-treesitter
@@ -63,8 +54,7 @@
 
         telescope-nvim
         telescope-fzf-native-nvim
-
-        nvim-dev-webicons
+        harpoon
 
         undotree
         vim-fugitive
