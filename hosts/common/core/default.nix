@@ -76,6 +76,7 @@
     agenix
     inputs.git-cloner.packages.${system}.default
   ];
+  services.printing.enable = true;
 
   security.pam.services.swaylock = {
     text = ''

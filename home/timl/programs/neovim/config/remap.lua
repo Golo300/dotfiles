@@ -6,6 +6,7 @@ vim.keymap.set("", "<leader>P", '"+P', { desc = "paste from clipboard" })
 vim.keymap.set("", "<leader>v", ":vsplit <cr>", { desc = "split vertical" })
 vim.keymap.set("", "<leader>s", ":w! <cr>", { desc = "save file" })
 vim.keymap.set("", "<leader>c", ":split <cr>", { desc = "split horizontal" })
+vim.keymap.set("", "<leader>e", ":Explore <cr>", { desc = "open explorer" })
 vim.keymap.set("", "<leader>q", ":quit <cr>", { desc = "close tab" })
 
 vim.keymap.set("", "<leader>h", "<C-w>h", { desc = "switch to left" })
