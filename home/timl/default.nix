@@ -11,6 +11,7 @@
       ./programs/lf.nix
       ./programs/kitty.nix
       ./programs/zsh.nix
+      ./programs/tmux.nix
       ./programs/neovim/neovim.nix
     ];
 
@@ -23,7 +24,6 @@
   home.packages = [
     pkgs.gnome.nautilus
     pkgs.kitty
-    pkgs.tmux
     pkgs.discord
     pkgs.firefox
     pkgs.spotify
