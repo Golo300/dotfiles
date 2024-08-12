@@ -11,6 +11,8 @@
       gopls
       clang
       pyright
+      csharp-ls
+      jdt-language-server
     ] ++ (with pkgs.nodePackages; [
       bash-language-server
       vscode-langservers-extracted
@@ -60,6 +62,7 @@
         vim-fugitive
         gitsigns-nvim
         git-blame-nvim
+        nvim-jdtls
       ];
     extraLuaConfig = lib.strings.concatStringsSep "\n"
       (lib.attrsets.mapAttrsToList
