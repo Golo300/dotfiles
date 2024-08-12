@@ -24,6 +24,7 @@
   home.packages = [
     pkgs.gnome.nautilus
     pkgs.kitty
+    pkgs.htop
     pkgs.discord
     pkgs.firefox
     pkgs.spotify
