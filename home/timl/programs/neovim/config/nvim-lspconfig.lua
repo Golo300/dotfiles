@@ -11,7 +11,7 @@ local on_attach = function(client, bufnr)
 	end
 
 	nmap("gd", vim.lsp.buf.definition, "[g]o to [d]efinition")
-    nmap("gi", vim.lsp.buf.implementation, "Go to implementation")
+	nmap("gi", vim.lsp.buf.implementation, "Go to implementation")
 	nmap("<leader>rn", vim.lsp.buf.rename, "[r]e[n]ame")
 	nmap("<leader>d", vim.lsp.buf.signature_help, "show signature help [d]ocumentation")
 	nmap("<leader>df", vim.diagnostic.open_float, "show [d]iagnostics [f]loat")
@@ -81,8 +81,8 @@ lspc.gopls.setup({
 	on_attach = on_attach,
 })
 lspc.csharp_ls.setup({
-    dotnet_cmd = "dotnet", -- this is the default
-    roslyn_version = "4.8.0-3.23475.7", -- this is the default
+	dotnet_cmd = "dotnet", -- this is the default
+	roslyn_version = "4.8.0-3.23475.7", -- this is the default
 	capabilities = capabilities,
 	on_attach = on_attach,
 })
