@@ -39,13 +39,13 @@ local s = ls.snippet
 local t = ls.text_node
 local i = ls.insert_node
 
-ls.add_snippets("go", {
-	s("iferr", {
-		t({ "if " }),
-		i(1, "err != nil"),
-		t({ " {", "\treturn " }),
-		i(2, "err"),
-		t({ "", "}", "" }),
-		i(0),
-	}),
-})
+-- ls.add_snippets("go", {
+-- 	s("iferr", {
+-- 		t({ "if " }),
+-- 		i(1, "err != nil"),
+-- 		t({ " {", "\treturn " }),
+-- 		i(2, "err"),
+-- 		t({ "", "}", "" }),
+-- 		i(0),
+-- 	}),
+-- })

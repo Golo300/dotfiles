@@ -8,6 +8,7 @@
       rust-analyzer
       kotlin-language-server
       clang-tools
+      go
       gopls
       clang
       pyright
