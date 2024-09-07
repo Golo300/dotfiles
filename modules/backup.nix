@@ -64,14 +64,14 @@ in
       };
 
       /* restic backup service to a local drive */
-      /*services.restic.backups.hdd = {
+      services.restic.backups.hdd = {
         user = "timl";
         initialize = true;
         passwordFile = config.age.secrets.resticPassword.path;
-        repository = "/run/media/timl/SAMSUNG/restic-nixos";
+        repository = "/run/media/timl/l/Laptop/";
         paths = [ "/home/timl" ];
         extraBackupArgs = [ "--exclude-caches" "--exclude-file=${excludeFile}" ];
         timerConfig = null;
-      };*/
+      };
     };
 }

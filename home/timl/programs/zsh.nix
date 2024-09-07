@@ -22,21 +22,12 @@
         wgd = "systemctl stop wg-quick-wg0";
         wgs = "systemctl status wg-quick-wg0";
       };
-      enableCompletion = true;
 
-      zplug = {
-        enable = true;
-        plugins = [
-          { name = "zsh-users/zsh-autosuggestions"; } # Simple plugin installation
-        ];
-
-      };
-
+      autosuggestion.enable = true;
+      syntaxHighlighting.enable = true;
+      
       oh-my-zsh = {
-        enable = true;
-        plugins = [
-          "battery"
-        ];
+        enable = false;
         theme = "bira";
       };
     };

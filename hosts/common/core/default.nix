@@ -13,7 +13,10 @@
 
   networking.networkmanager.enable = true;
 
-  programs.zsh.enable = true;
+  programs.zsh = {
+    enable = true;
+    enableCompletion = false;
+  };
 
   boot.binfmt.emulatedSystems = [ "aarch64-linux" ];
   nix.settings.extra-platforms = config.boot.binfmt.emulatedSystems;
