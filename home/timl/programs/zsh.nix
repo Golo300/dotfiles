@@ -25,7 +25,7 @@
 
       autosuggestion.enable = true;
       syntaxHighlighting.enable = true;
-      
+
       oh-my-zsh = {
         enable = false;
         theme = "bira";

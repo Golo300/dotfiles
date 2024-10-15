@@ -1,12 +1,13 @@
 { config, agenix, ... }: {
-  networking.firewall.allowedUDPPorts = [ 51820
-                                        12345
-                                        12344
-                                        12343
-                                        12342
-                                        12341
-                                        12340
-                                        ];
+  networking.firewall.allowedUDPPorts = [
+    51820
+    12345
+    12344
+    12343
+    12342
+    12341
+    12340
+  ];
   networking.hosts = {
     "192.168.178.51" = [ "pi" ];
     "192.168.178.27" = [ "center" ];

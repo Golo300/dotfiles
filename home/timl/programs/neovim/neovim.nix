@@ -50,6 +50,7 @@
         luasnip
         cmp_luasnip
         friendly-snippets
+        formatter-nvim
 
         comment-nvim
         vim-surround
