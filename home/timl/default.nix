@@ -12,6 +12,7 @@
       ./programs/kitty.nix
       ./programs/zsh.nix
       ./programs/tmux.nix
+      ./programs/ssh.nix
       ./programs/neovim/neovim.nix
     ];
 
@@ -36,6 +37,9 @@
     pkgs.fastfetch
     pkgs.moodle-dl
     pkgs.godot_4
+    pkgs.signal-desktop
+    pkgs.btop
+    pkgs.bruno
 
     pkgs.evince # gnome pdf reader
     pkgs.gnome.eog # gnome image viewer

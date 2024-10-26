@@ -63,12 +63,11 @@ in
         };*/
       };
 
-      /* restic backup service to a local drive */
-      services.restic.backups.hdd = {
+      services.restic.backups.center = {
         user = "timl";
         initialize = true;
         passwordFile = config.age.secrets.resticPassword.path;
-        repository = "/run/media/timl/l/Laptop/";
+        repository = "sftp:timl@center:/home/timl/backup";
         paths = [ "/home/timl" ];
         extraBackupArgs = [ "--exclude-caches" "--exclude-file=${excludeFile}" ];
         timerConfig = null;
