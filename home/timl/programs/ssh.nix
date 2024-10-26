@@ -1,6 +1,6 @@
 { config, lib, pkgs, ... }:
 {
-    programs.ssh = {
+  programs.ssh = {
     enable = true;
     matchBlocks = {
       mandalore-nixos = {
@@ -14,5 +14,5 @@
         ];
       };
     };
-};
+  };
 }
