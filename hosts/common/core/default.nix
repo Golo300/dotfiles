@@ -69,6 +69,7 @@
   };
 
   hardware.pulseaudio.enable = true;
+  services.pipewire.enable = false;
   # basic packages for all systems
   environment.systemPackages = with pkgs; [
     vim

@@ -23,7 +23,7 @@
   home.stateVersion = "23.11";
 
   home.packages = [
-    pkgs.gnome.nautilus
+    pkgs.nautilus
     pkgs.kitty
     pkgs.htop
     pkgs.discord
@@ -42,7 +42,7 @@
     pkgs.bruno
 
     pkgs.evince # gnome pdf reader
-    pkgs.gnome.eog # gnome image viewer
+    pkgs.eog # gnome image viewer
     pkgs.pistol
     pkgs.file
   ];

@@ -3,7 +3,7 @@
 {
   programs.kitty = {
     enable = true;
-    theme = "Glacier";
+    themeFile = "Glacier";
     settings = {
       # background_opacity = "0.8";
       enabled_layouts = "Splits";
