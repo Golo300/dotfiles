@@ -9,8 +9,8 @@
     12340
   ];
   networking.hosts = {
-    "192.168.178.51" = [ "pi" ];
-    "192.168.178.27" = [ "center" ];
+    "192.168.178.34" = [ "pi" ];
+    "192.168.178.33" = [ "center" ];
   };
 
   #environment.etc."resolv.conf".text = "nameserver 192.168.178.1\nnameserver 9.9.9.9";
