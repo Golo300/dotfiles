@@ -33,7 +33,7 @@
     enable = true;
     settings = {
       color = "000000";
-      font-size = 24;
+      font-size = 32;
       indicator-idle-visible = false;
       indicator-radius = 60;
       inside-color = "000000";
@@ -57,7 +57,13 @@
       pkgs.dunst
       pkgs.eww
       pkgs.wofi
+      pkgs.xorg.xcursorthemes
+      pkgs.wl-clipboard
+      pkgs.grim
     ];
+      services.flameshot = {
+        enable = true;
+      };
 
 
   home.file = {

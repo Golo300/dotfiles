@@ -25,6 +25,7 @@ let
       /home/timl/.zshrc
       /home/timl/go
       /home/timl/Arduino
+      /home/timl/privat
       node_modules
       __pycache__
       /home/timl/nobackup
