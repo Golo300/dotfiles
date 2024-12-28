@@ -22,6 +22,9 @@
   # virtualisation
   virtualisation.docker.enable = true;
   virtualisation.virtualbox.host.enable = true;
+  users.extraGroups.vboxusers.members = [ "timl" ];
+  nixpkgs.config.allowUnfree = true;
+  virtualisation.virtualbox.host.enableExtensionPack = true;
 
   system.stateVersion = "23.05";
 }
