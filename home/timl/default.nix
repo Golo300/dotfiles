@@ -45,6 +45,7 @@
     pkgs.eog # gnome image viewer
     pkgs.pistol
     pkgs.file
+    pkgs.alsa-utils
   ];
 
   xdg.mimeApps = {

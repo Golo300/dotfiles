@@ -31,8 +31,8 @@
 
 
   environment.systemPackages = with pkgs; [
-      libsForQt5.qt5.qtbase
-      libsForQt5.qt5.qtwayland
+    libsForQt5.qt5.qtbase
+    libsForQt5.qt5.qtwayland
   ];
 
   xdg.portal.enable = true;

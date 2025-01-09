@@ -5,20 +5,20 @@
     [
       ./locale.nix
       ./nix.nix
+      ./boot.nix
     ];
 
-  # Bootloader.
-  boot.loader.systemd-boot.enable = true;
-  boot.loader.efi.canTouchEfiVariables = true;
-
   networking.networkmanager.enable = true;
+
+  hardware.bluetooth.enable = true; # enables support for Bluetooth
+  hardware.bluetooth.powerOnBoot = true;
+
 
   programs.zsh = {
     enable = true;
     enableCompletion = false;
   };
 
-  boot.binfmt.emulatedSystems = [ "aarch64-linux" ];
   nix.settings.extra-platforms = config.boot.binfmt.emulatedSystems;
 
   networking.networkmanager.ensureProfiles.profiles = {
@@ -77,6 +77,8 @@
     docker-compose
     rclone
     restic
+    fuse
+    ntfs3g
     agenix
     inputs.git-cloner.packages.${system}.default
   ];

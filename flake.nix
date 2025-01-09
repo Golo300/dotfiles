@@ -4,7 +4,7 @@
   inputs = {
 
     # nix packages
-    nixpkgs.url = "github:nixos/nixpkgs/nixos-24.11";
+    nixpkgs.url = "github:NixOS/nixpkgs/nixos-24.05";
 
     # home manager
     home-manager = {
@@ -66,8 +66,6 @@
             modules = [ ./home/timl ];
             extraSpecialArgs = { inherit inputs; };
           };
-
-
 
         };
 

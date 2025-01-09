@@ -61,9 +61,9 @@
       pkgs.wl-clipboard
       pkgs.grim
     ];
-      services.flameshot = {
-        enable = true;
-      };
+  services.flameshot = {
+    enable = true;
+  };
 
 
   home.file = {
