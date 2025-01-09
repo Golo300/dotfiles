@@ -4,7 +4,7 @@
   inputs = {
 
     # nix packages
-    nixpkgs.url = "github:NixOS/nixpkgs/nixos-24.05";
+    nixpkgs.url = "github:NixOS/nixpkgs/nixos-24.11";
 
     # home manager
     home-manager = {

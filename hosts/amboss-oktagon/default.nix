@@ -26,5 +26,7 @@
   nixpkgs.config.allowUnfree = true;
   virtualisation.virtualbox.host.enableExtensionPack = true;
 
+  services.xserver.videoDrivers = [ "amdgpu" ];
+
   system.stateVersion = "23.05";
 }

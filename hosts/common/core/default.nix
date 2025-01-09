@@ -79,6 +79,9 @@
     restic
     fuse
     ntfs3g
+    vulkan-tools
+    libva
+    libva-utils
     agenix
     inputs.git-cloner.packages.${system}.default
   ];
