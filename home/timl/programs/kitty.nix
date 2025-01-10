@@ -4,6 +4,8 @@
   programs.kitty = {
     enable = true;
     themeFile = "Glacier";
+    font.name = "DejaVu Sans";
+    font.size = 16;
     settings = {
       # background_opacity = "0.8";
       enabled_layouts = "Splits";

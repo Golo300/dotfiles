@@ -20,8 +20,12 @@
   timl.backup.enable = true;
   services.blueman.enable = true;
   # virtualisation
+
   virtualisation.docker.enable = true;
   virtualisation.virtualbox.host.enable = true;
+  virtualisation.virtualbox.host.enableKvm = true;
+  virtualisation.virtualbox.host.addNetworkInterface = false;
+
   users.extraGroups.vboxusers.members = [ "timl" ];
   nixpkgs.config.allowUnfree = true;
   virtualisation.virtualbox.host.enableExtensionPack = true;
