@@ -14,6 +14,7 @@
       pyright
       csharp-ls
       jdt-language-server
+      haskell-language-server
     ] ++ (with pkgs.nodePackages; [
       bash-language-server
       vscode-langservers-extracted

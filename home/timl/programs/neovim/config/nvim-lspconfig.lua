@@ -90,3 +90,11 @@ lspc.jdtls.setup({
 	capabilities = capabilities,
 	on_attach = on_attach,
 })
+lspc.hls.setup {
+    settings = {
+      haskell = {
+        formattingProvider = 'stylish-haskell',
+      },
+    },
+    on_attach = on_attach,
+}
