@@ -35,7 +35,6 @@
     pkgs.font-awesome
     pkgs.ripgrep
     pkgs.fastfetch
-    pkgs.moodle-dl
     pkgs.godot_4
     pkgs.signal-desktop
     pkgs.btop
