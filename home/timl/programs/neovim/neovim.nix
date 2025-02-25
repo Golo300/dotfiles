@@ -11,6 +11,7 @@
       go
       gopls
       clang
+      nodejs_23
       pyright
       csharp-ls
       jdt-language-server
@@ -37,6 +38,7 @@
         nvim-treesitter
         nvim-treesitter.withAllGrammars
         nvim-lspconfig
+        copilot-lua
 
         onedark-nvim
         transparent
