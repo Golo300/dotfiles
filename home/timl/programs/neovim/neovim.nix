@@ -33,6 +33,16 @@
             sha256 = "sha256-Z4Icv7c/fK55plk0y/lEsoWDhLc8VixjQyyO6WdTOVw=";
           };
         };
+
+        golf = pkgs.vimUtils.buildVimPlugin {
+          name = "golf";
+          src = pkgs.fetchFromGitHub {
+            owner = "vuciv";
+            repo = "golf";
+            rev = "89f6ca2a4f3db62057ae45aea7ff5730f0f32e83";
+            sha256 = "sha256-bH+6GupGNhpeqnvX5cQxBbAIU6RAU30k++k3hK8GrmM=";
+          };
+        };
       in
       [
         nvim-treesitter
@@ -42,6 +52,7 @@
 
         onedark-nvim
         transparent
+        golf
 
         lsp_lines-nvim
         nvim-cmp
@@ -63,7 +74,6 @@
         telescope-fzf-native-nvim
         harpoon
 
-        undotree
         vim-fugitive
         gitsigns-nvim
         git-blame-nvim

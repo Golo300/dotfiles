@@ -1,4 +1,5 @@
-{ config, agenix, ... }: {
+{ config, agenix, pkgs, ... }: {
+
   networking.firewall.allowedUDPPorts = [
     51820
     12345
