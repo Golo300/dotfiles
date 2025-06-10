@@ -11,7 +11,7 @@
   ];
   networking.hosts = {
     "192.168.178.34" = [ "pi" ];
-    "192.168.178.33" = [ "center" ];
+    "192.168.178.33" = [ "center" "nextcloud.center"];
   };
 
   #environment.etc."resolv.conf".text = "nameserver 192.168.178.1\nnameserver 9.9.9.9";

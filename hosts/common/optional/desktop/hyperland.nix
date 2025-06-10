@@ -7,6 +7,7 @@
     enable = true;
     xwayland.enable = true;
   };
+  services.xserver.enable = true;
 
   environment.systemPackages = with pkgs; [
     libsForQt5.qt5.qtbase

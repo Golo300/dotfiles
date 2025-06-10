@@ -11,7 +11,7 @@
       go
       gopls
       clang
-      nodejs_23
+      nodejs_24
       pyright
       csharp-ls
       jdt-language-server
@@ -53,6 +53,7 @@
         onedark-nvim
         transparent
         golf
+        neo-tree-nvim
 
         lsp_lines-nvim
         nvim-cmp

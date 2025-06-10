@@ -22,13 +22,13 @@
   # virtualisation
 
   virtualisation.docker.enable = true;
-  virtualisation.virtualbox.host.enable = true;
-  virtualisation.virtualbox.host.enableKvm = true;
-  virtualisation.virtualbox.host.addNetworkInterface = false;
+  # virtualisation.virtualbox.host.enable = true; // for studies
+  # virtualisation.virtualbox.host.enableKvm = true; // for studies
+  # virtualisation.virtualbox.host.addNetworkInterface = false;
 
   users.extraGroups.vboxusers.members = [ "timl" ];
   nixpkgs.config.allowUnfree = true;
-  virtualisation.virtualbox.host.enableExtensionPack = true;
+  # virtualisation.virtualbox.host.enableExtensionPack = true; // for studies
 
   services.xserver.videoDrivers = [ "amdgpu" ];
 
