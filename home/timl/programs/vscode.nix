@@ -1,6 +1,6 @@
 { config, lib, pkgs, ... }:
 {
-  programs.vscode = {
+  programs.vscode.profiles.default = {
     enable = true;
     package = pkgs.vscode;
     extensions = with pkgs.vscode-extensions; [

@@ -38,7 +38,10 @@
     pkgs.godot_4
     pkgs.signal-desktop
     pkgs.btop
+    pkgs.tree
     pkgs.bruno
+    pkgs.duf
+    pkgs.tldr
 
     pkgs.evince # gnome pdf reader
     pkgs.eog # gnome image viewer
