@@ -69,8 +69,8 @@
     ];
   };
 
-  services.pulseaudio.enable = true;
-  services.pipewire.enable = false;
+  services.pulseaudio.enable = false;
+  services.pipewire.enable = true;
   # basic packages for all systems
   environment.systemPackages = with pkgs; [
     vim
@@ -83,10 +83,15 @@
     vulkan-tools
     libva
     libva-utils
+    libmtp
+    pipewire
     agenix
     inputs.git-cloner.packages.${system}.default
   ];
   services.printing.enable = true;
+
+  services.upower.enable = true;
+  services.power-profiles-daemon.enable = true;
 
   security.pam.services.swaylock = {
     text = ''

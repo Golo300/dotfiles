@@ -2,7 +2,8 @@
 {
   imports =
     [
-      ./hyperland-conf/waybar.nix
+      # ./hyperland-conf/waybar.nix
+      ./hyprpanel.nix
     ];
   gtk.enable = true;
 
@@ -54,7 +55,6 @@
       pkgs.qt5.qtwayland
       pkgs.qt6.qmake
       pkgs.qt6.qtwayland
-      pkgs.dunst
       pkgs.eww
       pkgs.wofi
       pkgs.xorg.xcursorthemes

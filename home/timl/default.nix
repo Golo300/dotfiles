@@ -42,6 +42,7 @@
     pkgs.bruno
     pkgs.duf
     pkgs.tldr
+    pkgs.upower
 
     pkgs.evince # gnome pdf reader
     pkgs.eog # gnome image viewer
@@ -49,7 +50,7 @@
     pkgs.file
     pkgs.alsa-utils
   ];
-
+ 
   xdg.mimeApps = {
     enable = true;
 

@@ -22,8 +22,8 @@
   # virtualisation
 
   virtualisation.docker.enable = true;
-  # virtualisation.virtualbox.host.enable = true; // for studies
-  # virtualisation.virtualbox.host.enableKvm = true; // for studies
+  # virtualisation.virtualbox.host.enable = true; # for studies
+  # virtualisation.virtualbox.host.enableKvm = true; # for studies
   # virtualisation.virtualbox.host.addNetworkInterface = false;
 
   users.extraGroups.vboxusers.members = [ "timl" ];
