@@ -27,8 +27,8 @@
       syntaxHighlighting.enable = true;
 
       oh-my-zsh = {
-        enable = false;
-        theme = "bira";
+        enable = true;
+        theme = "agnoster";
       };
     };
 }

@@ -3,7 +3,7 @@
 {
   programs.kitty = {
     enable = true;
-    themeFile = "Glacier";
+    themeFile = "Dracula";
     font.name = "DejaVu Sans";
     font.size = 16;
     settings = {

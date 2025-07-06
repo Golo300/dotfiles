@@ -7,14 +7,14 @@
         settings = {
             bar.layouts = {
                 "0" = {
-                    left = ["dashboard" "workspaces" "windowtitle"];
-                    middle = ["media"];
+                    left = [ "workspaces" "windowtitle"];
+                    middle = [ "dashboard" ];
                     right = [
                         "network"
                         "volume"
                         "bluetooth"
-                        "hyprsunset"
                         "battery"
+                        "media"
                         "clock"
                         "notifications"
                     ];
@@ -33,7 +33,7 @@
             menus.dashboard.shortcuts.enabled = true;
 
             wallpaper.enable = false;
-            theme = theme;
+            theme = "Dracula";
         };
         systemd.enable = false;
     };

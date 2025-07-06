@@ -50,7 +50,7 @@
         nvim-lspconfig
         copilot-lua
 
-        onedark-nvim
+        dracula-nvim
         transparent
         golf
         neo-tree-nvim

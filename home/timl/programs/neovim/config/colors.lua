@@ -1,7 +1,6 @@
-require("onedark").setup({
-	style = "darker",
+require("dracula").setup({
 })
-require("onedark").load()
+require("dracula").load()
 require("transparent").setup()
 
 -- vim.g.transparent_enabled = true
