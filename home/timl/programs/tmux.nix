@@ -7,9 +7,11 @@
       keyMode = "vi";
       plugins = with pkgs;[
             {
-                plugin = tmuxPlugins.nord;
+                plugin = tmuxPlugins.dracula;
                 extraConfig = ''
-                    set -g @plugin 'nordtheme/nord-tmux'
+                    set -g @plugin 'dracula'
+                    set -g @dracula-fixed-location "Herbrechtingen"
+                    set -g @dracula-network-hosts "center"
                 '';
             }
             ];

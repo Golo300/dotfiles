@@ -1,21 +1,19 @@
 { pkgs, ... }:
-    let 
-        theme = builtins.fromJSON (builtins.readFile ./gruvbox.json);
-    in {
+{
     programs.hyprpanel = {
         enable = true;
         settings = {
             bar.layouts = {
                 "0" = {
-                    left = [ "workspaces" "windowtitle"];
-                    middle = [ "dashboard" ];
+                    left = [ "dashboard" "workspaces" "windowtitle"];
+                    middle = [ "clock" ];
                     right = [
                         "network"
                         "volume"
                         "bluetooth"
                         "battery"
                         "media"
-                        "clock"
+
                         "notifications"
                     ];
                 };

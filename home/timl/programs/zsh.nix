@@ -28,6 +28,7 @@
 
       oh-my-zsh = {
         enable = true;
+        plugins = [ ];
         theme = "agnoster";
       };
     };
