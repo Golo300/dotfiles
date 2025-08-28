@@ -13,7 +13,7 @@
   hardware.bluetooth.enable = true; # enables support for Bluetooth
   hardware.bluetooth.powerOnBoot = true;
 
-    hardware.enableAllFirmware = true;
+  hardware.enableAllFirmware = true;
 
   programs.zsh = {
     enable = true;

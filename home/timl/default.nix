@@ -51,7 +51,7 @@
     pkgs.file
     pkgs.alsa-utils
   ];
- 
+
   xdg.mimeApps = {
     enable = true;
 

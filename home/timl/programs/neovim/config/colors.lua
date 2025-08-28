@@ -1,5 +1,4 @@
-require("dracula").setup({
-})
+require("dracula").setup({})
 require("dracula").load()
 require("transparent").setup()
 
