@@ -43,6 +43,7 @@
     pkgs.duf
     pkgs.tldr
     pkgs.upower
+    pkgs.nautilus
 
     pkgs.evince # gnome pdf reader
     pkgs.eog # gnome image viewer
