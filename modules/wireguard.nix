@@ -8,6 +8,7 @@
     12342
     12341
     12340
+    56887
   ];
   networking.hosts = {
     "192.168.178.34" = [ "pi" ];
@@ -31,21 +32,21 @@
         # For a client configuration, one peer entry for the server will suffice.
         {
           # Public key of the server (not a file path).
-          publicKey = "3GHi7QPXFLQeTJuLsYgtOGDcjd68pc8YXj13fGVFCUg=";
+          publicKey = "ZanxcfJyP1hwSKVvY3JI1ZvcMC5OMxVLoas8rLGsmW0=";
 
           presharedKeyFile = config.age.secrets.wireguardPresharedKey.path;
 
           # Forward all the traffic via VPN.
           allowedIPs = [
             "0.0.0.0/0"
-            "192.168.179.0/24"
+            "192.168.178.0/24"
           ];
           # Or forward only particular subnets
           #allowedIPs = [ "10.100.0.1" "91.108.12.0/22" ];
 
           # Set this to the server IP and port.
           #endpoint = "awajhg727oakmj5o.myfritz.net:56706";
-          endpoint = "homebasetl.duckdns.org:56706";
+          endpoint = "3w5ors5aoi76vh65.myfritz.net:56887";
           # ToDo: route to endpoint not automatically configured #
           # https://wiki.archlinux.org/index.php/WireGuard#Loop_routing 
           # https://discourse.nixos.org/t/solved-minimal-firewall-setup-for-wireguard-client/7577
