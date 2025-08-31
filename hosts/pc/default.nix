@@ -27,5 +27,22 @@
   services.xserver.videoDrivers = [ "nvidia" ];
   hardware.nvidia.open = false;
 
+  environment.systemPackages = with pkgs; [
+    lutris
+    steam
+    wine-wayland
+  ];
+
+  programs.steam = {
+    enable = true;
+    remotePlay.openFirewall = true; # Open ports in the firewall for Steam Remote Play
+    dedicatedServer.openFirewall = true; # Open ports in the firewall for Source Dedicated Server
+    localNetworkGameTransfers.openFirewall = true; # Open ports in the firewall for Steam Local Network Game Transfers
+  };
+
+  environment.variables = {
+    WINEARCH = "win64";  # Oder "win32" je nach Bedarf
+  };
+
   system.stateVersion = "25.05";
 }
