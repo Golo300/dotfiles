@@ -60,7 +60,7 @@
         {
           "timl" = home-manager.lib.homeManagerConfiguration {
             inherit pkgs;
-            modules = [ ./home/timl ];
+            modules = [ ./home/timl/laptop.nix ];
             extraSpecialArgs = { inherit inputs; };
           };
         };
