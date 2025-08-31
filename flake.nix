@@ -74,14 +74,14 @@
             modules = [ ./home/timl/laptop.nix ];
             extraSpecialArgs = { inherit inputs; };
           };
+        };
       homeConfigurations =
         {
-          "timl-pc" = home-manager.lib.homeManagerConfiguration {
+          "timlpc" = home-manager.lib.homeManagerConfiguration {
             inherit pkgs;
             modules = [ ./home/timl/pc.nix ];
             extraSpecialArgs = { inherit inputs; };
           };
-        };
         };
     };
 }

@@ -44,6 +44,7 @@
     pkgs.tldr
     pkgs.upower
     pkgs.nautilus
+    pkgs.prismlauncher
 
     pkgs.pistol
     pkgs.file

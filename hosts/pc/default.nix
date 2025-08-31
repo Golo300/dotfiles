@@ -25,6 +25,7 @@
   nixpkgs.config.allowUnfree = true;
 
   services.xserver.videoDrivers = [ "nvidia" ];
+  hardware.nvidia.open = false;
 
   system.stateVersion = "25.05";
 }
