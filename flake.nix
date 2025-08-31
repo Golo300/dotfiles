@@ -55,6 +55,17 @@
               inputs.home-manager.nixosModules.default
             ];
           };
+        pc = lib.nixosSystem {
+            specialArgs = { inherit inputs; };
+            modules = [
+              ./hosts/pc
+              agenix.nixosModules.default
+              {
+                _module.args.agenix = agenix.packages.${system}.default;
+              }
+              inputs.home-manager.nixosModules.default
+            ];
+          };
         };
       homeConfigurations =
         {
@@ -63,6 +74,14 @@
             modules = [ ./home/timl/laptop.nix ];
             extraSpecialArgs = { inherit inputs; };
           };
+      homeConfigurations =
+        {
+          "timl-pc" = home-manager.lib.homeManagerConfiguration {
+            inherit pkgs;
+            modules = [ ./home/timl/pc.nix ];
+            extraSpecialArgs = { inherit inputs; };
+          };
+        };
         };
     };
 }
