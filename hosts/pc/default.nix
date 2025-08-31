@@ -41,7 +41,7 @@
   };
 
   environment.variables = {
-    WINEARCH = "win64";  # Oder "win32" je nach Bedarf
+    WINEARCH = "win64"; # Oder "win32" je nach Bedarf
   };
 
   system.stateVersion = "25.05";

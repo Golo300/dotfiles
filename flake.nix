@@ -55,7 +55,7 @@
               inputs.home-manager.nixosModules.default
             ];
           };
-        pc = lib.nixosSystem {
+          pc = lib.nixosSystem {
             specialArgs = { inherit inputs; };
             modules = [
               ./hosts/pc
