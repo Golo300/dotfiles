@@ -1,6 +1,7 @@
 { config, agenix, pkgs, ... }: {
 
   networking.firewall.allowedUDPPorts = [
+    53
     51820
     12345
     12344
@@ -10,6 +11,14 @@
     12340
     56887
   ];
+
+  networking.nat = {
+    enable = true;
+    enableIPv6 = true;
+    externalInterface = "eth0";
+    internalInterfaces = [ "wg0" ];
+  };
+
   networking.hosts = {
     "192.168.178.34" = [ "pi" ];
     "192.168.178.33" = [ "center" "nextcloud.center" ];
@@ -23,7 +32,7 @@
       autostart = false;
       # Determines the IP address and subnet of the client's end of the tunnel interface.
       address = [ "192.168.178.201/24" ];
-      listenPort = 51820; # to match firewall allowedUDPPorts (without this wg uses random port numbers)
+      listenPort = 56887; # to match firewall allowedUDPPorts (without this wg uses random port numbers)
       dns = [ "8.8.8.8" ];
 
       privateKeyFile = config.age.secrets.wireguardPrivateKey.path;
