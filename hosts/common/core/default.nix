@@ -10,6 +10,11 @@
 
   networking.networkmanager.enable = true;
 
+  networking = {
+    nameservers = [ "192.168.178.33" ];
+    dhcpcd.extraConfig = "nohook resolv.conf";
+  };
+
   hardware.bluetooth.enable = true; # enables support for Bluetooth
   hardware.bluetooth.powerOnBoot = true;
 
