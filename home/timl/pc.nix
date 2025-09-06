@@ -45,6 +45,7 @@
     pkgs.upower
     pkgs.nautilus
     pkgs.prismlauncher
+    pkgs.obsidian
 
     pkgs.pistol
     pkgs.file

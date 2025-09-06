@@ -55,6 +55,7 @@
         transparent
         golf
         neo-tree-nvim
+        obsidian-nvim
 
         lsp_lines-nvim
         nvim-cmp
