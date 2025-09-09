@@ -16,6 +16,8 @@
       csharp-ls
       jdt-language-server
       haskell-language-server
+      mplayer
+      libcaca
     ] ++ (with pkgs.nodePackages; [
       bash-language-server
       vscode-langservers-extracted
@@ -31,6 +33,16 @@
             repo = "transparent.nvim";
             rev = "f09966923f7e329ceda9d90fe0b7e8042b6bdf31";
             sha256 = "sha256-Z4Icv7c/fK55plk0y/lEsoWDhLc8VixjQyyO6WdTOVw=";
+          };
+        };
+
+        surfer = pkgs.vimUtils.buildVimPlugin {
+          name = "nvim-surfer";
+          src = pkgs.fetchFromGitHub {
+            owner = "fpeterek";
+            repo = "nvim-surfers";
+            rev = "aaebf28849e2eadfebe02549dcb2cb20c7875b3d";
+            sha256 = "sha256-jKduxXhqKUadREeFtrOVYQCKlkJCzjHKnanx3TGucDA=";
           };
         };
 
@@ -57,6 +69,9 @@
         neo-tree-nvim
         obsidian-nvim
         smear-cursor-nvim
+        surfer
+        dirbuf-nvim
+
 
         lsp_lines-nvim
         nvim-cmp

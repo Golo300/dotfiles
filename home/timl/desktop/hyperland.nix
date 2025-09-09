@@ -49,7 +49,6 @@
     [
       pkgs.kitty
       pkgs.hyprpaper
-      pkgs.rofi
       pkgs.firefox-wayland
       pkgs.swww
       pkgs.qt5.qtwayland
