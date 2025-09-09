@@ -71,6 +71,8 @@
         smear-cursor-nvim
         surfer
         dirbuf-nvim
+        dashboard-nvim
+
 
 
         lsp_lines-nvim

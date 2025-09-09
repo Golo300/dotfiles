@@ -39,3 +39,8 @@ vim.o.smartcase = true
 -- splits: by default split to right and below
 vim.o.splitright = true
 vim.o.splitbelow = true
+
+
+require('dashboard').setup {
+  -- config
+}
