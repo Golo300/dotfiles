@@ -56,6 +56,7 @@
         golf
         neo-tree-nvim
         obsidian-nvim
+        smear-cursor-nvim
 
         lsp_lines-nvim
         nvim-cmp
