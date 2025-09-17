@@ -3,7 +3,7 @@
   imports =
     [
       # ./hyperland-conf/waybar.nix
-      ./hyprpanel.nix
+      # ./hyprpanel.nix
     ];
   gtk.enable = true;
 
