@@ -1,8 +1,8 @@
-require("obsidian").setup({ 
-    workspaces = {
-        {
-          name = "personal",
-          path = "~/obsidian/Knowledge",
-        },
-      },
+require("obsidian").setup({
+	workspaces = {
+		{
+			name = "personal",
+			path = "~/obsidian/Knowledge",
+		},
+	},
 })

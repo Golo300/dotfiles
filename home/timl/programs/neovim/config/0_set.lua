@@ -40,7 +40,6 @@ vim.o.smartcase = true
 vim.o.splitright = true
 vim.o.splitbelow = true
 
-
-require('dashboard').setup {
-  -- config
-}
+require("dashboard").setup({
+	-- config
+})

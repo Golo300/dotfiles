@@ -85,6 +85,8 @@
     libva-utils
     libmtp
     pipewire
+    openvpn
+    networkmanager-openvpn
     agenix
     inputs.git-cloner.packages.${system}.default
   ];

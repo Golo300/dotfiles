@@ -25,12 +25,16 @@
   nixpkgs.config.allowUnfree = true;
 
   services.xserver.videoDrivers = [ "nvidia" ];
+  hardware.nvidia.modesetting.enable = true;
+
   hardware.nvidia.open = false;
 
   environment.systemPackages = with pkgs; [
     lutris
     steam
     wine-wayland
+    cudaPackages.cudatoolkit
+    cudaPackages.cudnn
   ];
 
   programs.steam = {
