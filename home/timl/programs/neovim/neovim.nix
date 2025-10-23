@@ -17,6 +17,8 @@
       jdt-language-server
       haskell-language-server
       mplayer
+      metals
+      coursier
       libcaca
     ] ++ (with pkgs.nodePackages; [
       bash-language-server
@@ -62,6 +64,7 @@
         nvim-lspconfig
         copilot-lua
         render-markdown-nvim
+        nvim-metals
 
         dracula-nvim
         transparent
