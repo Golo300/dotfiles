@@ -3,7 +3,7 @@
     enable = true;
     defaultEditor = true;
     extraPackages = with pkgs;[
-      sumneko-lua-language-server
+      lua-language-server
       nil
       rust-analyzer
       kotlin-language-server

@@ -31,7 +31,8 @@
 
   environment.systemPackages = with pkgs; [
     lutris
-    steam
+    heroic
+    gamemode
     wine-wayland
     cudaPackages.cudatoolkit
     cudaPackages.cudnn

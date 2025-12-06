@@ -49,7 +49,7 @@
     [
       pkgs.kitty
       pkgs.hyprpaper
-      pkgs.firefox-wayland
+      pkgs.firefox
       pkgs.swww
       pkgs.qt5.qtwayland
       pkgs.qt6.qmake
