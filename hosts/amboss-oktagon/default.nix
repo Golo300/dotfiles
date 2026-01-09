@@ -19,12 +19,17 @@
 
   timl.backup.enable = true;
   services.blueman.enable = true;
+  services.flatpak.enable = true;
   # virtualisation
 
   virtualisation.docker.enable = true;
   # virtualisation.virtualbox.host.enable = true; # for studies
   # virtualisation.virtualbox.host.enableKvm = true; # for studies
   # virtualisation.virtualbox.host.addNetworkInterface = false;
+
+  programs.steam = {
+    enable = true;
+  };
 
   users.extraGroups.vboxusers.members = [ "timl" ];
   nixpkgs.config.allowUnfree = true;

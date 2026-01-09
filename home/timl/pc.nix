@@ -47,6 +47,7 @@
     pkgs.nautilus
     pkgs.prismlauncher
     pkgs.obsidian
+    pkgs.protonvpn-gui
 
     pkgs.pistol
     pkgs.file

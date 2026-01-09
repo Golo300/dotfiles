@@ -45,6 +45,9 @@
     pkgs.tldr
     pkgs.upower
     pkgs.nautilus
+    pkgs.protonvpn-gui
+    pkgs.prismlauncher
+    pkgs.heroic
 
     pkgs.evince # gnome pdf reader
     pkgs.eog # gnome image viewer
