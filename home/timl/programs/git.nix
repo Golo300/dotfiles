@@ -21,20 +21,14 @@ in
 {
   programs.git = {
     enable = true;
-    userName = "Tim Lanzinger";
-    userEmail = "tim.lanzinger@gmx.de";
-    extraConfig = {
-
-      push =
-        {
-          autoSetupRemote = true;
-        };
-      pull =
-        {
-          rebase = true;
-        };
+    settings = {
+      user = {
+        name = "Tim Lanzinger";
+        email = "tim.lanzinger@gmx.de";
+      };
+      push.autoSetupRemote = true;
+      pull.rebase = true;
     };
-
   };
   home.packages = [ brancherer repoer ];
 }

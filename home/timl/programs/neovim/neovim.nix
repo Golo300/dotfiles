@@ -75,8 +75,7 @@
         surfer
         dirbuf-nvim
         dashboard-nvim
-
-
+        CopilotChat-nvim
 
         lsp_lines-nvim
         nvim-cmp
