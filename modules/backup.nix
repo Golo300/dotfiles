@@ -26,6 +26,7 @@ let
       /home/timl/go
       /home/timl/Arduino
       /home/timl/privat
+      /home/timl/Games
       node_modules
       __pycache__
       /home/timl/nobackup

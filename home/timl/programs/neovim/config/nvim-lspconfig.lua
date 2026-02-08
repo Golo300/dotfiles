@@ -104,16 +104,16 @@ metals_config.capabilities = capabilities
 metals_config.on_attach = on_attach
 
 metals_config.settings = {
-  showImplicitArguments = true,
-  serverVersion = "latest.snapshot", -- oder eine feste Version wie "0.12.11"
+	showImplicitArguments = true,
+	serverVersion = "latest.snapshot", -- oder eine feste Version wie "0.12.11"
 }
 
 -- Start Metals über nvim-metals
 vim.api.nvim_create_autocmd("FileType", {
-  pattern = { "scala", "sbt", "java" },
-  callback = function()
-    require("metals").initialize_or_attach(metals_config)
-  end,
+	pattern = { "scala", "sbt", "java" },
+	callback = function()
+		require("metals").initialize_or_attach(metals_config)
+	end,
 })
 
 require("render-markdown").setup({

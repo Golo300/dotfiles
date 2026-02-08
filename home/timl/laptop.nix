@@ -48,6 +48,7 @@
     pkgs.protonvpn-gui
     pkgs.prismlauncher
     pkgs.heroic
+    pkgs.baobab
 
     pkgs.evince # gnome pdf reader
     pkgs.eog # gnome image viewer

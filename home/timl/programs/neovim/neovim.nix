@@ -102,7 +102,7 @@
         git-blame-nvim
         nvim-jdtls
       ];
-    extraLuaConfig = lib.strings.concatStringsSep "\n"
+    initLua = lib.strings.concatStringsSep "\n"
       (lib.attrsets.mapAttrsToList
         (name: value:
           "require('timl.${lib.strings.removeSuffix ".lua" name}')"
