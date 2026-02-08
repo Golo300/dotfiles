@@ -5,19 +5,31 @@
       # ./hyperland-conf/waybar.nix
       # ./hyprpanel.nix
     ];
-  gtk.enable = true;
 
-  # Cursor Theme
-  gtk.cursorTheme.package = pkgs.bibata-cursors;
-  gtk.cursorTheme.name = "Bibata-Modern-Ice";
+  gtk = {
+    enable = true;
 
-  # GTK Theme
-  gtk.theme.package = pkgs.adapta-gtk-theme;
-  gtk.theme.name = "Adapta-Nokto";
+    theme = {
+      package = pkgs.dracula-theme;
+      name = "Dracula";
+    };
 
-  # Icon Theme
-  gtk.iconTheme.package = pkgs.papirus-icon-theme;
-  gtk.iconTheme.name = "Papirus-Dark";
+    iconTheme = {
+      package = pkgs.dracula-icon-theme;
+      name = "Dracula";
+    };
+
+    cursorTheme = {
+      package = pkgs.bibata-cursors;
+      name = "Bibata-Modern-Ice";
+    };
+  };
+
+  qt = {
+    enable = true;
+    platformTheme.name = "gtk";
+    style.name = "gtk";
+  };
 
   dconf.settings = {
     "org/gnome/desktop/interface" = {
@@ -55,7 +67,6 @@
       pkgs.qt6.qmake
       pkgs.qt6.qtwayland
       pkgs.eww
-      pkgs.wofi
       pkgs.xorg.xcursorthemes
       pkgs.wl-clipboard
       pkgs.grim

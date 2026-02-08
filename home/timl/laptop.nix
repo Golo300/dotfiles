@@ -14,6 +14,7 @@
       ./programs/zsh.nix
       ./programs/tmux.nix
       ./programs/ssh.nix
+      ./programs/wofi.nix
       ./programs/neovim/neovim.nix
     ];
 
