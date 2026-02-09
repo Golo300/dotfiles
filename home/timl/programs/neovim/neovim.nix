@@ -60,7 +60,6 @@
       in
       [
         nvim-treesitter
-        nvim-treesitter.withAllGrammars
         nvim-lspconfig
         copilot-lua
         render-markdown-nvim
