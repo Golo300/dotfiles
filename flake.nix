@@ -18,7 +18,6 @@
       inputs.nixpkgs.follows = "nixpkgs";
     };
 
-
     git-cloner.url = "github:Golo300/git-cloner";
 
     # formatter for *.nix files

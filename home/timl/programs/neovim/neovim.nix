@@ -87,6 +87,7 @@
         cmp_luasnip
         friendly-snippets
         formatter-nvim
+        vim-wakatime
 
         comment-nvim
         vim-surround

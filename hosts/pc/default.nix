@@ -1,4 +1,3 @@
-# main file for pc
 { config, inputs, pkgs, ... }:
 {
   imports =
@@ -26,14 +25,22 @@
 
   services.xserver.videoDrivers = [ "nvidia" ];
   hardware.nvidia.modesetting.enable = true;
+  services.flatpak.enable = true;
+
+  hardware.opengl = {
+    enable = true;
+  };
 
   hardware.nvidia.open = false;
 
   environment.systemPackages = with pkgs; [
     lutris
     heroic
+    opentrack
+    aitrack
     gamemode
     wine-wayland
+    virtualglLib
     cudaPackages.cudatoolkit
     cudaPackages.cudnn
   ];
@@ -44,6 +51,7 @@
     dedicatedServer.openFirewall = true; # Open ports in the firewall for Source Dedicated Server
     localNetworkGameTransfers.openFirewall = true; # Open ports in the firewall for Steam Local Network Game Transfers
   };
+  programs.steam.protontricks.enable = true;
 
   environment.variables = {
     WINEARCH = "win64"; # Oder "win32" je nach Bedarf
