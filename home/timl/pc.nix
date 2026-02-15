@@ -15,6 +15,7 @@
       ./programs/tmux.nix
       ./programs/ssh.nix
       ./programs/wofi.nix
+      ./programs/instagram.nix
       ./programs/neovim/neovim.nix
     ];
 
