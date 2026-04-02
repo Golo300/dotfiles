@@ -50,6 +50,8 @@
     pkgs.prismlauncher
     pkgs.obsidian
     pkgs.protonvpn-gui
+    pkgs.brave
+    pkgs.electrum
 
     pkgs.pistol
     pkgs.file

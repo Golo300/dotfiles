@@ -87,6 +87,7 @@
     pipewire
     openvpn
     networkmanager-openvpn
+    javaPackages.compiler.openjdk17
     agenix
     inputs.git-cloner.packages.${system}.default
   ];
