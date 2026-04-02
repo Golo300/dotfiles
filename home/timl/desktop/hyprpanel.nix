@@ -1,5 +1,6 @@
 { pkgs, ... }:
 {
+  programs.quickshell.enable = true;
   programs.hyprpanel = {
     enable = true;
     settings = {
