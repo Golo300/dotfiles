@@ -46,7 +46,7 @@
     pkgs.tldr
     pkgs.upower
     pkgs.nautilus
-    pkgs.protonvpn-gui
+    pkgs.proton-vpn
     pkgs.prismlauncher
     pkgs.heroic
     pkgs.baobab

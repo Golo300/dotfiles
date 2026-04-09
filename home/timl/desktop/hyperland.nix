@@ -57,12 +57,12 @@
       pkgs.kitty
       pkgs.hyprpaper
       pkgs.firefox
-      pkgs.swww
+      pkgs.awww
       pkgs.qt5.qtwayland
       pkgs.qt6.qmake
       pkgs.qt6.qtwayland
       pkgs.eww
-      pkgs.xorg.xcursorthemes
+      pkgs.xcursor-themes
       pkgs.wl-clipboard
       pkgs.grim
     ];

@@ -42,27 +42,27 @@ in
 
   config = mkIf (cfg.enable)
     {
-      /* restic backup service to backblaze b2 bucket */
-      services.restic.backups.b2 = {
+
+    services.restic.backups.hetzner = {
         user = "timl";
         initialize = true;
-        passwordFile = config.age.secrets.resticPassword.path;
-        repository = "s3:https://s3.us-west-002.backblazeb2.com/Backup-thinkpad";
-        environmentFile = config.age.secrets.backblazeB2ResticS3EnvironmentSecrets.path;
+
+        repository = "s3:nbg1.your-objectstorage.com/laptop-backup-timl";
+
         paths = [ "/home/timl" ];
+        extraBackupArgs = [ "--exclude-caches" "--exclude-file=${excludeFile}" ];
+        environmentFile = "/home/timl/privat/restic-env-laptop";
+
+        # timerConfig = {
+        #   OnCalendar = "02:30";
+        #   Persistent = true;       # run on next boot if missed
+        # };
+
         pruneOpts = [
-          "--keep-hourly 48"
           "--keep-daily 7"
           "--keep-weekly 4"
-          "--keep-monthly 12"
-          "--keep-yearly 5"
+          "--keep-monthly 6"
         ];
-        extraOptions = [ "s3.region=us-west-002" ];
-        extraBackupArgs = [ "--exclude-caches" "--exclude-file=${excludeFile}" ];
-        timerConfig = null; /*{
-          OnCalendar = "daily";
-          Persistent = true;
-        };*/
       };
 
       services.restic.backups.center = {
