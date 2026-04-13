@@ -91,6 +91,12 @@
     agenix
     inputs.git-cloner.packages.${system}.default
   ];
+  services.syncthing = {
+      user = "timl";
+      enable = true;
+      openDefaultPorts = true;
+  };
+
   services.printing.enable = true;
 
   services.upower.enable = true;
