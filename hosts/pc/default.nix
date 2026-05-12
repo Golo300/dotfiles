@@ -34,7 +34,6 @@
   hardware.nvidia.open = false;
 
   environment.systemPackages = with pkgs; [
-    lutris
     heroic
     opentrack
     aitrack

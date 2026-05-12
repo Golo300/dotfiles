@@ -12,6 +12,7 @@
       gopls
       clang
       nodejs_24
+      tree-sitter
       pyright
       csharp-ls
       jdt-language-server
@@ -70,7 +71,6 @@
         dirbuf-nvim
         dashboard-nvim
         CopilotChat-nvim
-
         lsp_lines-nvim
         nvim-cmp
         cmp-nvim-lsp
@@ -83,15 +83,12 @@
         friendly-snippets
         formatter-nvim
         vim-wakatime
-
         comment-nvim
         vim-surround
         vim-repeat
-
         telescope-nvim
         telescope-fzf-native-nvim
         harpoon
-
         vim-fugitive
         gitsigns-nvim
         git-blame-nvim

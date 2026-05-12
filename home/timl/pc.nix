@@ -49,13 +49,14 @@
     pkgs.nautilus
     pkgs.prismlauncher
     pkgs.obsidian
-    pkgs.protonvpn-gui
+    pkgs.proton-vpn
     pkgs.brave
     pkgs.electrum
 
     pkgs.pistol
     pkgs.file
     pkgs.alsa-utils
+    pkgs.google-cloud-sdk
   ];
 
   xdg.mimeApps = {
