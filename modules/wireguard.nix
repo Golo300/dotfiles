@@ -21,12 +21,12 @@
 
   networking.hosts = {
     "192.168.178.34" = [ "pi" ];
-    "192.168.178.33" = [ "center" "stream.center" "vikunja.center" "dashboard.center" "solar.center" "paperless.center" "meetube.center" "portainer.center" "habits.center" ];
+    "192.168.178.33" = [ "center" "stream.timl.center" "vikunja.timl.center" "dashboard.timl.center" "solar.timl.center" "paperless.timl.center" "meetube.timl.center" "portainer.timl.center" "habits.timl.center" "search.timl.center" ];
   };
 
   networking.wg-quick.interfaces = {
     wg0 = {
-      autostart = false;
+      autostart = true;
       address = [ "192.168.178.201/24" ];
       listenPort = 56887; # to match firewall allowedUDPPorts (without this wg uses random port numbers)
       dns = [ "8.8.8.8" ];

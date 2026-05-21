@@ -52,6 +52,7 @@
     pkgs.proton-vpn
     pkgs.brave
     pkgs.electrum
+    pkgs.harsh
 
     pkgs.pistol
     pkgs.file
