@@ -53,12 +53,14 @@
     pkgs.brave
     pkgs.electrum
     pkgs.harsh
+    pkgs.github-copilot-cli
 
     pkgs.pistol
     pkgs.file
     pkgs.alsa-utils
     pkgs.google-cloud-sdk
   ];
+
 
   xdg.mimeApps = {
     enable = true;
