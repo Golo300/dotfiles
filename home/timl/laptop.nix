@@ -50,6 +50,8 @@
     pkgs.prismlauncher
     pkgs.heroic
     pkgs.baobab
+    pkgs.google-cloud-sdk
+    pkgs.terraform
 
     pkgs.evince # gnome pdf reader
     pkgs.eog # gnome image viewer
