@@ -21,7 +21,7 @@
 
   networking.hosts = {
     "192.168.178.34" = [ "pi" ];
-    "192.168.178.70" = [ "center" "stream.timl.center" "vikunja.timl.center" "dashboard.timl.center" "solar.timl.center" "paperless.timl.center" "meetube.timl.center" "portainer.timl.center" "habits.timl.center" "search.timl.center" "grafana.timl.center"];
+    "192.168.178.70" = [ "center" "stream.timl.center" "vikunja.timl.center" "dashboard.timl.center" "solar.timl.center" "paperless.timl.center" "meetube.timl.center" "portainer.timl.center" "habits.timl.center" "search.timl.center" "grafana.timl.center" "home.timl.center" "wiki.timl.center"];
   };
 
   networking.wg-quick.interfaces = {
