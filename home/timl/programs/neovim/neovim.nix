@@ -21,7 +21,10 @@
       metals
       coursier
       libcaca
-    ]; 
+      bash-language-server
+      vscode-langservers-extracted
+      typescript-language-server
+    ];
     plugins = with pkgs.vimPlugins;
       let
         transparent = pkgs.vimUtils.buildVimPlugin {

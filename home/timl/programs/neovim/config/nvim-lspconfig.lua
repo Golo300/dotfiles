@@ -56,7 +56,7 @@ lspc.jsonls.setup({
 	capabilities = capabilities,
 	on_attach = on_attach,
 })
-lspc.tsserver.setup({
+lspc.ts_ls.setup({
 	capabilities = capabilities,
 	on_attach = on_attach,
 })
@@ -81,8 +81,6 @@ lspc.gopls.setup({
 	on_attach = on_attach,
 })
 lspc.csharp_ls.setup({
-	dotnet_cmd = "dotnet", -- this is the default
-	roslyn_version = "4.8.0-3.23475.7", -- this is the default
 	capabilities = capabilities,
 	on_attach = on_attach,
 })
@@ -110,7 +108,7 @@ metals_config.settings = {
 
 -- Start Metals über nvim-metals
 vim.api.nvim_create_autocmd("FileType", {
-	pattern = { "scala", "sbt", "java" },
+	pattern = { "scala", "sbt" },
 	callback = function()
 		require("metals").initialize_or_attach(metals_config)
 	end,

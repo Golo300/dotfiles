@@ -4,7 +4,7 @@
   imports =
     [
       ./desktop/hyperland.nix
-      ./desktop/hyprpanel.nix
+      ./desktop/wayle-laptop.nix
 
       ./programs/sh.nix
       ./programs/git.nix
