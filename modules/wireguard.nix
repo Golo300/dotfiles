@@ -11,6 +11,7 @@
     12340
     56887
   ];
+  networking.firewall.enable = false;
 
   networking.nat = {
     enable = true;

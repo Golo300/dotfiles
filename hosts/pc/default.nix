@@ -42,7 +42,11 @@
     virtualglLib
     cudaPackages.cudatoolkit
     cudaPackages.cudnn
+    ollama-cuda
+    claude-code
   ];
+
+  programs.coolercontrol.enable = true;
 
   programs.steam = {
     enable = true;
@@ -52,9 +56,26 @@
   };
   programs.steam.protontricks.enable = true;
 
+    services.resolved = {
+      enable = true;
+      dnssec = "allow-downgrade";
+    };
+
   environment.variables = {
     WINEARCH = "win64"; # Oder "win32" je nach Bedarf
   };
 
+  programs.nix-ld = {
+    enable = true;
+    libraries = with pkgs; [
+      icu
+      openssl
+      zlib
+      libunwind
+      lttng-ust
+      krb5
+      stdenv.cc.cc.lib
+    ];
+  };
   system.stateVersion = "25.05";
 }
